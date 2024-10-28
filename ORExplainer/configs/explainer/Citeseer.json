@@ -1,0 +1,49 @@
+{
+  "gnnexplainer": {
+      "lr" : 0.01,
+      "epochs" : 100,
+      "sample_bias" : 0.0,
+
+      "num_classes": 5,
+
+      "coff_size": 0.005,
+      "coff_ent": 0.1,
+      "temps": [5.0, 2.0]
+    },
+
+    "pgexplainer": {
+      "lr" : 0.01,
+      "epochs" : 100,
+      "sample_bias" : 0.0,
+
+      "num_classes": 5,
+
+      "coff_size": 0.0,
+      "coff_ent": 0.0,
+      "temps": [5.0, 2.0]
+    },
+
+    "mixupexplainer": {
+      "lr" : 0.01,
+      "epochs" : 100,
+      "sample_bias" : 0.0,
+
+      "num_classes": 5,
+
+      "coff_size": 0.005,
+      "coff_ent": 0.1,
+      "temps": [5.0, 2.0]
+    },
+
+    "orexplainer": {
+      "lr" : 0.01,
+      "epochs" : 100,
+      "sample_bias" : 0.0,
+
+      "num_classes": 5,
+
+      "coff_size": 0.005,
+      "coff_ent": 0.1,
+      "temps": [5.0, 2.0]
+    }
+}
