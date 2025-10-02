@@ -29,7 +29,7 @@ The main scripts for running the model on synthetic and real datasets are provid
 ```bash
 python pipeline_syn.py --dataset=syn1 --ood=1 --date=0901
 ```
-- Replace `syn1` with your target synthetic dataset.  
+- Replace `syn1` with your target synthetic dataset **(syn1-syn4)**.  
 - The `--ood` flag specifies the OOD **structural shift level** (`0–3`).  
 
 ### Real-World Datasets
@@ -39,6 +39,7 @@ python pipeline_real.py --dataset=Citeseer --ood=label1  # Unseen label OOD
 ```
 - **Structural / Featural OOD**: set `--ood` to an integer between `0–3` (higher = stronger OOD level).  
 - **Unseen Label OOD**: set `--ood` to `label0` (disabled) or `label1` (enabled).  
+- **dataset**: choose from `Cora` or `Citeseer`.
 
 #### Recommended Practice
 For better traceability of results, we recommend appending a date-based identifier to your save directory or experiment name.  
