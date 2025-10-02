@@ -37,8 +37,7 @@ parser.add_argument('--date', default='0901')
 
 parser.add_argument('--ood', default="0", type=str)
 
-parser.add_argument('--gamma', default=0.0, type=float)
-parser.add_argument('--beta', default=0.0, type=float)
+parser.add_argument('--gamma', default=5.0, type=float)
 parser.add_argument('--temp', default=1.0, type=float)
 
 parser.add_argument('--K', default=0, type=int)
