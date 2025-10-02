@@ -33,7 +33,7 @@ parser.add_argument('--date', default='0929', help="For savefile")
 
 parser.add_argument('--ood', default="0", type=str)
 
-parser.add_argument('--gamma', default=0.0, type=float)
+parser.add_argument('--gamma', default=0.1, type=float)
 parser.add_argument('--temp', default=1.0, type=float)
 
 parser.add_argument('--K', default=2, type=int)
