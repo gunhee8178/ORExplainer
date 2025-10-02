@@ -1,5 +1,5 @@
 
-# ORExplainer
+# Out-of-Distribution Robust Explainer (ORExplainer)
 
 ## Requirements
 
@@ -30,7 +30,7 @@ The main scripts for running the model on synthetic and real datasets are provid
 python pipeline_syn.py --dataset=syn1 --ood=1 --date=0901
 ```
 - Replace `syn1` with your target synthetic dataset **(syn1-syn4)**.  
-- The `--ood` flag specifies the OOD **structural shift level** (`0–3`).  
+- The `--ood` flag specifies the OOD **structural OOD level** (`0–3`).  
 
 ### Real-World Datasets
 ```bash
