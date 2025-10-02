@@ -51,8 +51,8 @@ For better traceability of results, we recommend appending a date-based identifi
 |            | syn2     | 0.003         | 20     | 0.05                     | 1.0                    | 5.0          |
 |            | syn3     | 0.003         | 20     | 0.1                      | 1.0                    | 5.0          |
 |            | syn4     | 0.003         | 30     | 0.1                      | 1.0                    | 10.0         |
-| Featural   | Cora     | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 1.0          |
-|            | Citeseer | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 1.0          |
+| Featural   | Cora     | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.1          |
+|            | Citeseer | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.1          |
 | Unseen     | Cora     | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.1          |
 |            | Citeseer | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.05         |
 
