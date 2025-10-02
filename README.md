@@ -24,28 +24,24 @@ conda env create -f environment.yml
 
 The main scripts for running the model on synthetic and real datasets are provided below:
 
-### Synthetic Data
-
-For synthetic datasets, use the following command. Replace `syn1` with your specific synthetic dataset and `str_60` with the desired OOD configuration:
-
-```shell
-python pipeline_syn.py --dataset=syn1 --ood=str_60
+## Running the Pipelines
+### Synthetic Datasets
+```bash
+python pipeline_syn.py --dataset=syn1 --ood=1 --date=0901
 ```
+- Replace `syn1` with your target synthetic dataset.  
+- The `--ood` flag specifies the OOD **structural shift level** (`0–3`).  
 
-### Real Data
-
-For real datasets, you can run:
-
-```shell
-python pipeline_real.py --dataset=Cora
+### Real-World Datasets
+```bash
+python pipeline_real.py --dataset=Cora --ood=2        # Featural OOD (level 2)
+python pipeline_real.py --dataset=Citeseer --ood=label1  # Unseen label OOD
 ```
+- **Structural / Featural OOD**: set `--ood` to an integer between `0–3` (higher = stronger OOD level).  
+- **Unseen Label OOD**: set `--ood` to `label0` (disabled) or `label1` (enabled).  
 
-## Explanation Modules
-
-ORExplainer leverages OOD detection techniques to analyze model robustness in different graph settings. The model works with both synthetic and real-world graph data to provide insights into feature importance and node interactions.
-
-- **Synthetic Data**: Use `pipeline_syn.py` for controlled experiments with synthetic datasets.
-- **Real Data**: Use `pipeline_real.py` to test on real-world datasets like Cora.
+#### Recommended Practice
+For better traceability of results, we recommend appending a date-based identifier to your save directory or experiment name.  
 
 ## References
 
