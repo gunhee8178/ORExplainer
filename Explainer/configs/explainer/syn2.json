@@ -1,0 +1,98 @@
+{
+  "gnnexplainer": {
+      "node_indice": [400, 700, 5],
+
+      "lr" : 0.003,
+      "epochs" : 100,
+      "sample_bias" : 0.5,
+
+      "num_classes": 8,
+      "num_nodes": 5,
+      "sparsity": 12.0,
+
+      "coff_size": 0.05,
+      "coff_ent": 1.0,
+      "temps" : [5.0, 2.0]
+  },
+
+    "pgexplainer": {
+      "node_indice": [400, 700, 5],
+
+      "lr" : 0.003,
+      "epochs" : 20,
+      "sample_bias" : 0.5,
+
+      "num_classes": 8,
+      "num_nodes": 5,
+      "sparsity": 12.0,
+
+      "coff_size": 0.05,
+      "coff_ent": 1.0,
+      "temps" : [1.0, 1.0]
+    },
+
+    "mixupexplainer": {
+      "node_indice": [400, 700, 5],
+
+      "lr" : 0.003,
+      "epochs" : 20,
+      "sample_bias" : 0.5,
+
+      "num_classes": 8,
+      "num_nodes": 5,
+      "sparsity": 12.0,
+
+      "coff_size": 0.05,
+      "coff_ent": 1.0,
+      "temps" : [1.0, 1.0]
+    },
+
+    "proxyexplainer": {
+      "node_indice": [400, 700, 5],
+
+      "lr" : 0.003,
+      "epochs" : 20,
+      "sample_bias" : 0.5,
+
+      "num_classes": 8,
+      "num_nodes": 5,
+      "sparsity": 12.0,
+
+      "coff_size": 0.05,
+      "coff_ent": 1.0,
+      "temps" : [1.0, 1.0]
+    },
+
+    "orexplainer": {
+      "node_indice": [400, 700, 5],
+
+      "lr" : 0.003,
+      "epochs" : 20,
+      "sample_bias" : 0.5,
+
+      "num_classes": 8,
+      "num_nodes": 5,
+      "sparsity": 12.0,
+
+      "coff_size": 0.05,
+      "coff_ent": 1.0,
+      "temps" : [1.0, 1.0]
+    },
+
+    "vinfor": {
+      "node_indice": [400, 700, 5],
+
+      "lr" : 0.003,
+      "epochs" : 20,
+      "sample_bias" : 0.5,
+
+      "num_classes": 8,
+      "num_nodes": 5,
+      "sparsity": 12.0,
+
+      "coff_size": 1.0,
+      "coff_ent": 1.0,
+      "temps" : [1.0, 1.0],
+      "hidden": 20
+    }
+}
