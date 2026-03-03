@@ -27,31 +27,31 @@ The main scripts for running the model on synthetic and real datasets are provid
 ## Running the Pipelines
 ### Synthetic Datasets
 ```bash
-python pipeline_syn.py --dataset=syn1 --ood=1 --date=0901
+python pipeline_syn.py --dataset=syn1 --ood=1 --date=0301
 ```
 - Replace `syn1` with your target synthetic dataset **(syn1-syn4)**.  
-- The `--ood` flag specifies the OOD **structural OOD level** (`0–3`).  
+- The `--ood` flag specifies the OOD **Structure-level OOD** (`0–3`).  
 
 ### Real-World Datasets
 ```bash
-python pipeline_real.py --dataset=Cora --ood=2        # Featural OOD (level 2)
-python pipeline_real.py --dataset=Citeseer --ood=label1  # Unseen label OOD
+python pipeline_real.py --dataset=Cora --ood=2        # Feature-level OOD (level 2)
+python pipeline_real.py --dataset=Citeseer --ood=label1  # Unseen-label OOD
 ```
-- **Structural / Featural OOD**: set `--ood` to an integer between `0–3` (higher = stronger OOD level).  
-- **Unseen Label OOD**: set `--ood` to `label0` (disabled) or `label1` (enabled).  
+- **Structure-level / Feature-level OOD**: set `--ood` to an integer between `0–3` (higher = stronger OOD level).  
+- **Unseen-Label OOD**: set `--ood` to `label0` (disabled) or `label1` (enabled).  
 - **dataset**: choose from `Cora` or `Citeseer`.
 
 #### Recommended Practice
 For better traceability of results, we recommend appending a date-based identifier to your save directory or experiment name.  
 
 ### Hyperparameter Settings
-| OOD type   | Dataset  | Learning rate | Epochs | **$\alpha$** (coff_size) | **$\beta$** (coff_ent) | **$\gamma$** |
+| OOD Type   | Dataset  | Learning rate | Epochs | **$\alpha$** (coff_size) | **$\beta$** (coff_ent) | **$\gamma$** |
 |------------|----------|---------------|--------|--------------------------|------------------------|--------------|
-| Structural | syn1     | 0.003         | 10     | 0.05                     | 1.0                    | 5.0          |
+| Structure  | syn1     | 0.003         | 10     | 0.05                     | 1.0                    | 5.0          |
 |            | syn2     | 0.003         | 20     | 0.05                     | 1.0                    | 5.0          |
 |            | syn3     | 0.003         | 20     | 0.1                      | 1.0                    | 5.0          |
 |            | syn4     | 0.003         | 30     | 1.0                      | 1.0                    | 10.0         |
-| Featural   | Cora     | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.1          |
+| Feature    | Cora     | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.1          |
 |            | Citeseer | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.1          |
 | Unseen     | Cora     | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.1          |
 |            | Citeseer | 0.005         | 20     | 1.0                      | $5×10^{-4}$            | 0.05         |
