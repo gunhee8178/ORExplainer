@@ -45,7 +45,7 @@ python pipeline_real.py --dataset=Citeseer --ood=label1  # Unseen-label OOD
 For better traceability of results, we recommend appending a date-based identifier to your save directory or experiment name.  
 
 ### Hyperparameter Settings
-| OOD Type   | Dataset  | Learning rate | Epochs | **$\alpha$** (coff_size) | **$\beta$** (coff_ent) | **$\gamma$** |
+| OOD Type   | Dataset  | Learning rate | Epochs | **$\alpha$** (coff_size) | **$\beta$** (coff_ent) | **$\gamma$** (WEP)|
 |------------|----------|---------------|--------|--------------------------|------------------------|--------------|
 | Structure  | syn1     | 0.003         | 10     | 0.05                     | 1.0                    | 5.0          |
 |            | syn2     | 0.003         | 20     | 0.05                     | 1.0                    | 5.0          |
