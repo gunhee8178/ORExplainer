@@ -1,4 +1,4 @@
-name: explain
+name: ORExplainer
 
 channels:
   - pyg
